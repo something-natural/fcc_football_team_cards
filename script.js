@@ -5,8 +5,6 @@ const year = document.getElementById("year");
 const coach = document.getElementById("head-coach");
 const select = document.getElementById("players")
 
-//team stats
-
 
 // team array
 const myFavoriteFootballTeam = {
@@ -175,7 +173,16 @@ const myFavoriteFootballTeam = {
       },
     ],
   };
-  
+
+ 
+
+//team stats
+team.textContent = myFavoriteFootballTeam.team;
+sport.textContent = myFavoriteFootballTeam.sport;
+year.textContent = myFavoriteFootballTeam.year;
+headCoach.textContent = myFavoriteFootballTeam.headCoach;
+
+
 // event listener
 select.addEventListener ("change", (e) => {
     console.log(e.target.value);
